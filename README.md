@@ -1,4 +1,4 @@
-# GPTMusic
+# GPTMusic 🎵
 Projeto para a disciplina ECM967 - Tópicos Avançados em Back End
 
 ## Análise e recomendações de músicas utilizando Chat GPT
