@@ -1,0 +1,79 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "version" : "2024-10-06T22:58:11Z",
+    "title" : "MusicRecommendationAPI"
+  },
+  "host" : "rbqg113rue.execute-api.us-east-1.amazonaws.com",
+  "basePath" : "/dev",
+  "schemes" : [ "https" ],
+  "paths" : {
+    "/musicgpt" : {
+      "post" : {
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "gptModel",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/gptModel"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "200 response",
+            "schema" : {
+              "$ref" : "#/definitions/Empty"
+            },
+            "headers" : {
+              "Access-Control-Allow-Origin" : {
+                "type" : "string"
+              }
+            }
+          }
+        }
+      },
+      "options" : {
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "responses" : {
+          "200" : {
+            "description" : "200 response",
+            "schema" : {
+              "$ref" : "#/definitions/Empty"
+            },
+            "headers" : {
+              "Access-Control-Allow-Origin" : {
+                "type" : "string"
+              },
+              "Access-Control-Allow-Methods" : {
+                "type" : "string"
+              },
+              "Access-Control-Allow-Headers" : {
+                "type" : "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "Empty" : {
+      "type" : "object",
+      "title" : "Empty Schema"
+    },
+    "gptModel" : {
+      "type" : "object",
+      "required" : [ "prompt" ],
+      "properties" : {
+        "prompt" : {
+          "type" : "string",
+          "description" : "Recomendação de música que quer do GPT",
+          "minLength" : 1
+        }
+      }
+    }
+  }
+}
