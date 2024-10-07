@@ -33,4 +33,4 @@ Modelo de Uso:
 ![alt text](media/ThunderClient.png)
 
 #### Video
-![](media/GPTMusicT1.mov)
+[Video](media/GPTMusicT1.mov)
