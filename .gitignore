@@ -1,0 +1,3 @@
+.env
+/musicgpt
+db.sqlite3
