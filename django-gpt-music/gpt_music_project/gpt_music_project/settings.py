@@ -47,9 +47,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
     'gpt_api_app',
     'db_app',
-    'rest_framework',
 ]
 
 MIDDLEWARE = [
@@ -95,6 +95,9 @@ DATABASES = {
 
 # TinyDB nao e suportado nativamente pelo Django
 TINYDB_FILE = BASE_DIR / 'db.json'  # Define o caminho para o arquivo TinyDB
+
+# Chave da API do OpenAI
+OPENAI_API_KEY = env('OPENAI_API_KEY')
 
 
 # Password validation
