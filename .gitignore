@@ -1,3 +1,4 @@
 .env
 /musicgpt
 db.sqlite3
+TO_DO.md
