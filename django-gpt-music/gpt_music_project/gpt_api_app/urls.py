@@ -1,6 +1,6 @@
 from django.urls import path
-from .views import ChatGPTView
+from .views import AskGPTAPIView
 
 urlpatterns = [
-    path('musicgpt/', ChatGPTView),
+    path('musicgpt/', AskGPTAPIView.as_view(), name='ask_gpt_music'),
 ]

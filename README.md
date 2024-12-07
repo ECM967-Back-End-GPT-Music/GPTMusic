@@ -34,3 +34,18 @@ Modelo de Uso:
 
 #### Video
 [Video](media/GPTMusicT1.mov)
+</br>
+https://youtu.be/FpQIJcbByGM
+
+</br>
+</br>
+</br>
+
+# 🚀 T2
+
+### 🏠 Arquitetura do sistema
+O T2 utiliza o framework Python **Django** como Back-End
+
+
+
+### 💻 Uso
